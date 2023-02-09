@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "iEatBackground",
+  "version": "1.0.0",
+  "description": "chrome extension to add a custom background to google.com",
+  "icons": {
+    "16": "/images/icon.jpeg",
+    "48" : "/images/redditicon.png",
+    "128": "/images/image128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "css": ["/main.css"]
+    }
+  ]
+}
